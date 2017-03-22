@@ -1,13 +1,14 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Umbrella App</title>
+		<title>Error</title>
 	</head>
 
 	<body>
-		<h1>Hello weather bug!</h1>
-        <h2>Should you bring an umbrella out or not?</h2>
-        <img src='static/bug.png' alt="icon"><br>
+		<h1>There's a problem</h1>
+		
+		<p>{{ errortext }}<p>
+
         <form action='/getlocation'>
             zip:
             <input type='text' name='zip'><br><br>
@@ -18,7 +19,6 @@
             <input type='text' name='state'> <br><br>
             <input type='submit'>
         </form>
-
    </body>
 
 </html>
